@@ -4,7 +4,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func InitRouter(server *Server) *gin.Engine {
+func InitRouter() *gin.Engine {
 	router := gin.Default()
 	setupMiddlewares(router)
 	return router

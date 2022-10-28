@@ -1,11 +1,12 @@
 package main
 
 import (
+	"log"
+	"path"
+
 	"ju-go-server/app/models"
 	"ju-go-server/db"
 	"ju-go-server/server"
-	"log"
-	"path"
 )
 
 func main() {
@@ -18,10 +19,8 @@ func main() {
 	models.DB = database
 
 	appServer := server.NewServer()
-	println("fvdfsfdbg")
 	err = appServer.Run("3000")
 	if err != nil {
 		log.Fatal(err.Error())
 	}
-	println("fvdfsfdbg")
 }

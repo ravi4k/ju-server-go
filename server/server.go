@@ -2,11 +2,12 @@ package server
 
 import (
 	"fmt"
-	"gorm.io/gorm"
-	"ju-go-server/config"
 	"log"
 	"net/http"
 	"time"
+
+	"gorm.io/gorm"
+	"ju-go-server/config"
 )
 
 type Server struct {
@@ -19,7 +20,7 @@ func NewServer() *Server {
 }
 
 func (server *Server) Run(port string) error {
-	router := InitRouter(server)
+	router := InitRouter()
 	config.SetupRoutes(router)
 
 	server.httpServer = &http.Server{

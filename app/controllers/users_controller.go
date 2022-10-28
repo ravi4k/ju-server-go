@@ -1,10 +1,11 @@
 package controllers
 
 import (
-	"github.com/gin-gonic/gin"
-	"ju-go-server/app/models"
 	"net/http"
 	"strconv"
+
+	"github.com/gin-gonic/gin"
+	"ju-go-server/app/models"
 )
 
 type UserController struct{}
