@@ -1,0 +1,6 @@
+development:
+  host: 127.0.0.1
+  port: 60333
+  database: example_database
+  username: root
+  password:
